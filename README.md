@@ -9,8 +9,15 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   # tworzymy hermetyczne środowisko dla bibliotek aplikacji:
   $ python -m venv .venv
 
-  # aktywowanie hermetycznego środowiska
-  $ source .venv/Source/activate
+  # aktywowanie hermetycznego środowiska w Linux/macOS
+  $ source .venv/bin/activate
+
+  # aktywowanie hermetycznego środowiska w Git Bash na Windows
+  $ source .venv/Scripts/activate
+
+  # aktywowanie hermetycznego środowiska w PowerShell na Windows
+  $ .\.venv\Scripts\Activate.ps1
+
   $ pip install -r requirements.txt
   $ pip install -r test_requirements.txt
 
@@ -47,8 +54,14 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   ```
   ...
 
-  # aktywacja 
-  $ source .venv/Source/activate
+  # aktywacja w Linux/macOS
+  $ source .venv/bin/activate
+
+  # aktywacja w Git Bash na Windows
+  $ source .venv/Scripts/activate
+
+  # aktywacja w PowerShell na Windows
+  $ .\.venv\Scripts\Activate.ps1
   ```
 
 - Integracja z TravisCI:
