@@ -4,7 +4,7 @@ from hello_world.formater import JSON, SUPPORTED, PLAIN
 from flask import Response, request
 
 moje_imie = "Daniel"
-msg = "Hello World!"
+msg = "Hello World!1"
 
 
 @app.route('/')
