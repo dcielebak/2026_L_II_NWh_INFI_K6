@@ -6,6 +6,7 @@ from flask import Response, request
 moje_imie = "Daniel"
 msg = "Hello World!"
 
+
 @app.route('/')
 def index():
     output = request.args.get('output')
@@ -16,6 +17,7 @@ def index():
     if output == JSON:
         return Response(result, mimetype="application/json")
     return result
+
 
 @app.route('/outputs')
 def supported_output():
