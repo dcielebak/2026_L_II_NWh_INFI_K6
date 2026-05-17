@@ -40,8 +40,8 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 - Uruchamianie testów (see: http://doc.pytest.org/en/latest/capture.html):
 
   ```
-  $ PYTHONPATH=. py.test
-  $ PYTHONPATH=. py.test --verbose -s
+  $ PYTHONPATH=. python -m pytest
+  $ PYTHONPATH=. python -m pytest --verbose -s
   ```
 
 - Kontynuując pracę z projektem, aktywowanie hermetycznego środowiska dla aplikacji py:
@@ -64,10 +64,12 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   $ .\.venv\Scripts\Activate.ps1
   ```
 
-- Integracja z TravisCI:
+- Integracja z CircleCI:
 
   ```
-  # miejsce na twoje notatki
+  yaml to czytelny dla czlowieka format zapisu danych i konfiguracji
+  json rozni sie od yaml tym, ze jest bardziej sztywny składniowo i częściej używany do wymiany danych między aplikacjami
+  yaml jest wygodny do konfiguracji, json jest prosty i popularny w api, a xml jest najbardziej rozbudowany, ale coraz rzadziej uzywany
   ```
 
 # Pomocnicze
